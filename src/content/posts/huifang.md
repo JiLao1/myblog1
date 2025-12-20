@@ -4,7 +4,7 @@ published: 2025-12-21
 pinned: false
 description: 一款录屏、回放软件，感觉比N卡回放好用.
 tags: [软件,回放,录屏]
-category: 教程
+category: 资源分享
 licenseName: "Unlicensed"
 author: P_star7
 draft: true
