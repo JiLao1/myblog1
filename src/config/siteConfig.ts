@@ -8,7 +8,7 @@ const SITE_LANG = "zh_CN";
 export const siteConfig: SiteConfig = {
 	title: "P_star7的主页",
 	subtitle: "P_star7的主页",
-	site_url: "https://2553385.xyz",
+	site_url: "https://blog-cf.2553385.xyz",
 	description:
 		"DDC的个人博客",
 	keywords: [

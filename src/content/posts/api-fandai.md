@@ -3,7 +3,7 @@ title: 利用边缘函数中转Gemini API，无需翻墙使用Gemini
 published: 2025-12-22
 pinned: false
 description: 利用边缘函数中转Gemini API，实现国内直接使用Gemini，无需翻墙。
-tags: [Gemini3pro,API,中转，cloudflare，vercel]
+tags: [Gemini3pro,API,中转,Cloudflare,Vercel]
 category: 教程
 licenseName: "Unlicensed"
 author: P_star7
