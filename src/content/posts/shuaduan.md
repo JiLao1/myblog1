@@ -5,7 +5,7 @@ pinned: false
 description: 还在为体育场馆刷锻头痛吗？快来看看这个邪修吧.
 tags: [TJU,邪修]
 category: 教程
-licenseName: "Unlicensed"
+licenseName: "CC BY 4.0"
 author: P_star7
 draft: true
 date: 2025-12-20
@@ -53,4 +53,5 @@ pubDate: 2025-12-20
 **轻松解决 10 次刷锻任务，就是这么简单！**
 
 ---
+
 *注：本方法属于非常规操作，使用请低调。*

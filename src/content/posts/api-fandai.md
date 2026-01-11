@@ -5,7 +5,7 @@ pinned: false
 description: 利用边缘函数中转Gemini API，实现国内直接使用Gemini，无需翻墙。
 tags: [Gemini3pro,API,中转,Cloudflare,Vercel]
 category: 教程
-licenseName: "Unlicensed"
+licenseName: "CC BY 4.0"
 author: P_star7
 draft: false
 date: 2025-12-22
@@ -27,6 +27,7 @@ Github：[https://github.com/tech-shrimp/gemini-balance-lite](https://github.com
 ---
 
 ## 📓 部署流程
+
 ### 1.登录Github，并点击部署
 
 * 打开上文的github链接，下滑，在README中找到“Vercel部署（推荐）”
@@ -48,13 +49,14 @@ Github：[https://github.com/tech-shrimp/gemini-balance-lite](https://github.com
 * 找到右上方的`Settings`按钮。
 
 * 进入`Settings`后在左边选择`Domains`。点击`Add Domain`来添加一个域名。这里建议使用一个不常用的域名，因为使用这种方法可能会导致域名被墙。
->本教程使用我托管到Cloudflare的一个免费域名，关于免费域名如何领取后续会更新文章。
+  
+  > 本教程使用我托管到Cloudflare的一个免费域名，关于免费域名如何领取后续会更新文章。
 
 * 添加完成后会有红色警告，展开后按照Vercel的要求将DNS记录填写到cloudflare里。（记得关代理状态）
 
 * 完成后回到Vercel点击刷新，打上蓝色的勾就说明成功了。
 
->（如果不行就多刷新几次或多等一会）
+> （如果不行就多刷新几次或多等一会）
 
 ---
 
@@ -63,8 +65,9 @@ Github：[https://github.com/tech-shrimp/gemini-balance-lite](https://github.com
 ---
 
 ## 🤖 测试与使用
->PC端以Cherry studio为例， 
->移动端推荐使用Rikkahub。
+
+> PC端以Cherry studio为例， 
+> 移动端推荐使用Rikkahub。
 
 ### 1.添加API并添加模型
 
@@ -79,7 +82,8 @@ Github：[https://github.com/tech-shrimp/gemini-balance-lite](https://github.com
 * 在`模型`一栏中点击下方`添加`按钮
 
 * 添加你要用的模型。
->（如果你不清楚如何填写，可前往[https://ai.google.dev/gemini-api/docs/models?hl=zh-cn#gemini-3-pro](https://ai.google.dev/gemini-api/docs/models?hl=zh-cn#gemini-3-pro)查看各模型的模型代码，复制填写即可）
+  
+  > （如果你不清楚如何填写，可前往[https://ai.google.dev/gemini-api/docs/models?hl=zh-cn#gemini-3-pro](https://ai.google.dev/gemini-api/docs/models?hl=zh-cn#gemini-3-pro)查看各模型的模型代码，复制填写即可）
 
 * 添加完成后可点击`健康监测`按钮检查是否可用。
 
@@ -90,7 +94,3 @@ Github：[https://github.com/tech-shrimp/gemini-balance-lite](https://github.com
 ---
 
 ## 🎉 至此，全部操作已完成，你现在可以在国内直接使用Gemini。
-
-
-
-
