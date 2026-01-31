@@ -1,6 +1,6 @@
 ---
 title: 如何注册dpdns.org永久免费域名
-published: 2026-1-31
+published: 2026-01-31
 pinned: false
 description: 免费注册永久域名
 tags: [域名,白嫖]
@@ -8,8 +8,8 @@ category: 教程
 licenseName: "CC BY 4.0"
 author: P_star7
 draft: false
-date: 2026-1-31
-pubDate: 2026-1-31
+date: 2026-01-31
+pubDate: 2026-01-31
 ---
 
 # 如何注册dpdns.org永久免费域名，并一键托管到Cloudflare
