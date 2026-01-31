@@ -7,7 +7,7 @@ tags: [Gemini3pro,焚诀]
 category: 资源分享
 licenseName: "Unlicensed"
 author: P_star7
-draft: false
+draft: true
 date: 2025-12-21
 pubDate: 2025-12-21
 ---
