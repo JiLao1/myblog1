@@ -24,7 +24,7 @@ pubDate: 2026-01-31
 
 *点击`register a domain`按钮，来到登陆界面。
 
-![登陆界面](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain1.png)
+![loading-ag-166](images/freedomain1.png)
 
 *可以自己注册，也可以用google登录。*
 
@@ -32,7 +32,7 @@ pubDate: 2026-01-31
 
 *此处的信息用随机信息生成网站生成一个即可，网站链接：[https://www.fakepersongenerator.com/](https://www.fakepersongenerator.com/)
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain3.png)
+![loading-ag-168](images/freedomain3.png)
 
 *用户名随便填，邮箱需要填一个能接收邮件的，这里我用我自己的。其余信息用工具提供的随即信息即可，注意要符合要求的格式。
 
@@ -42,13 +42,13 @@ pubDate: 2026-01-31
 
 *注册成功后前往你刚才填写的邮箱，点击验证链接。
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain4.png)
+![loading-ag-170](images/freedomain4.png)
 
 *验证成功后回到官网，再次点击`register a domain`按钮，用刚才使用的邮箱登录。
 
 *这里会提示验证KYC，直接用github验证即可。
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain5.png)
+![loading-ag-172](images/freedomain5.png)
 
 *验证完成后账号即注册完成。
 
@@ -56,11 +56,11 @@ pubDate: 2026-01-31
 
 *来到仪表盘，点击左边`Domain Registration`按钮。
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain6.png)
+![loading-ag-174](images/freedomain6.png)
 
 *在下方输入你的域名名字，后缀选.dpdns.org即可，记得勾选服务条款。
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain7.png)
+![loading-ag-176](images/freedomain7.png)
 
 ### 3.DNS解析
 
@@ -68,23 +68,23 @@ pubDate: 2026-01-31
 
 *在左侧点击`Domain`，添加一个新的域名，将自己注册到的域名填写进去,其余选项不变即可。
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain9.png)
+![loading-ag-178](images/freedomain9.png)
 
 *选择计划直接选择免费的即可。
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain10.png)
+![loading-ag-180](images/freedomain10.png)
 
 *若出现让你手动输入，直接点击`继续前往激活`
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain11.png)
+![loading-ag-182](images/freedomain11.png)
 
 *这里会提示让你替换名称服务器，按照要求替换即可。
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain12.png)
+![loading-ag-184](images/freedomain12.png)
 
 *复制这里的名称服务器，回到刚才的域名网站，粘贴进1、2名称服务器中，如图。
 
-![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain13.png)
+![loading-ag-186](images/freedomain13.png)
 
 *完成后点击`Register`按钮，之后等待cloudflare解析完成，时间不定，解析完成一般会给你发送邮件。
 
