@@ -8,7 +8,7 @@ export const friendsConfig: FriendLink[] = [
 		title: "Nth2miss",
 		imgurl: "https://q1.qlogo.cn/g?b=qq&nk=1226666897&s=640",
 		desc: "Hello, I'm Nth2Miss.",
-		siteurl: "https://blog-nf.nth2miss.cn/",
+		siteurl: "https://blog.nth2miss.cn/",
 		tags: ["Blog"],
 		weight: 10, // 权重，数字越大排序越靠前
 		enabled: true, // 是否启用
