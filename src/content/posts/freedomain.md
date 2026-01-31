@@ -10,7 +10,6 @@ author: P_star7
 draft: false
 date: 2026-1-31
 pubDate: 2026-1-31
-
 ---
 
 # 如何注册dpdns.org永久免费域名，并一键托管到Cloudflare
@@ -98,7 +97,3 @@ pubDate: 2026-1-31
 *来到DigitalPlat,点击左侧My Domains,点击你之前注册的域名，点击`Renew`,点击`Request free renewal`，按要求更新即可。
 
 ![](file:///C:/Users/ASUS/Documents/GitHub/myblog1/src/content/posts/images/freedomain14.png)
-
-
-
-
