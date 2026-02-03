@@ -32,6 +32,19 @@ const getDynamicNavBarConfig = (): NavBarConfig => {
 				external: true,
 				icon: "fa6-brands:bilibili",
 			},
+			{
+				name: "Tiktok",
+				icon: "fa6-brands:tiktok",
+				url: "https://www.douyin.com/user/MS4wLjABAAAAGE6EIUwY2Kx8X7UhTp2IOhKs5FdggZVJM2Rop-PoSxWTCh7Vh7EoMqtvSeTgQJsj?from_tab_name=main",
+				external: true,
+			},
+			{
+				name: "Steam",
+				icon: "fa6-brands:steam-symbol",
+				url: "https://steamcommunity.com/id/dingzhen520/",
+				external: true,
+				
+			},
 		],
 	});
 

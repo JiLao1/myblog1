@@ -28,12 +28,6 @@ export const profileConfig: ProfileConfig = {
 			showName: false,
 		},
 		{
-			name: "Email",
-			icon: "fa6-solid:envelope",
-			url: "mailto:1106751456@qq.com",
-			showName: false,
-		},
-		{
 			name: "Tiktok",
 			icon: "fa6-brands:tiktok",
 			url: "https://www.douyin.com/user/MS4wLjABAAAAGE6EIUwY2Kx8X7UhTp2IOhKs5FdggZVJM2Rop-PoSxWTCh7Vh7EoMqtvSeTgQJsj?from_tab_name=main",
