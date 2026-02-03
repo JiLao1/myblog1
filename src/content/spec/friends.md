@@ -12,7 +12,7 @@ description: "与优秀的朋友们一起成长"
 ```yaml
 站点名称: P_star7的小站
 站点描述: Don't forget.
-站点链接: https://2553385.xyz
+站点链接: https://blog-cf.2553385.xyz
 头像链接: https://q1.qlogo.cn/g?b=qq&nk=1106751456&s=640
 
 ```

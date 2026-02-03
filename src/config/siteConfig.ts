@@ -7,7 +7,7 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	title: "P_star7的主页",
-	subtitle: "P_star7的主页",
+	subtitle: "",
 	site_url: "https://blog-cf.2553385.xyz",
 	description:
 		"DDC的个人博客",
@@ -70,7 +70,7 @@ export const siteConfig: SiteConfig = {
 	pages: {
 		sponsor: true, // 赞助页面开关
 		guestbook: true, // 留言板页面开关，需要配置评论系统
-		bangumi: true, // 番组计划页面开关，含追番和游戏，dev调试时只获取一页数据，build才会获取全部数据
+		bangumi: false, // 番组计划页面开关，含追番和游戏，dev调试时只获取一页数据，build才会获取全部数据
 	},
 
 	// 文章列表布局配置
