@@ -34,6 +34,18 @@ export const profileConfig: ProfileConfig = {
 			showName: false,
 		},
 		{
+			name: "Tiktok",
+			icon: "fa6-brands:tiktok",
+			url: "https://www.douyin.com/user/MS4wLjABAAAAGE6EIUwY2Kx8X7UhTp2IOhKs5FdggZVJM2Rop-PoSxWTCh7Vh7EoMqtvSeTgQJsj?from_tab_name=main",
+			showName: false,
+		},
+		{
+			name: "Steam",
+			icon: "fa6-brands:steam-symbol",
+			url: "https://steamcommunity.com/id/dingzhen520/",
+			showName: false,
+		},
+		{
 			name: "RSS",
 			icon: "fa6-solid:rss",
 			url: "/rss/",
