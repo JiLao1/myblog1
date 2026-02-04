@@ -33,14 +33,19 @@ Github：[https://github.com/tech-shrimp/gemini-balance-lite](https://github.com
 * 打开上文的github链接，下滑，在README中找到“Vercel部署（推荐）”
 
 * 点击`Deploy`按钮进行一键部署。
+  ![](images/api1.png)
 
 ### 2.在Vercel上部署
 
 * 跳转到vercel网站后在 “ Private Repository Name”中填写一个项目名字，可随便填写。
 
 * 输入完成后点击`Create`，如果部署成功会显示“Proxy is Running!”
+  
+  ![](images/api2.png)
 
 * 此时如果点击这行文字会跳转到Vercel给你分配的域名，但此域名无法在国内使用，需要绑定一个自己的域名来解决。
+  
+  ![](images/api3.png)
 
 ### 3.完成域名绑定
 
@@ -51,6 +56,8 @@ Github：[https://github.com/tech-shrimp/gemini-balance-lite](https://github.com
 * 进入`Settings`后在左边选择`Domains`。点击`Add Domain`来添加一个域名。这里建议使用一个不常用的域名，因为使用这种方法可能会导致域名被墙。
   
   > 本教程使用我托管到Cloudflare的一个免费域名，关于免费域名如何领取后续会更新文章。
+  
+  ![](images/api4.png)
 
 * 添加完成后会有红色警告，展开后按照Vercel的要求将DNS记录填写到cloudflare里。（记得关代理状态）
 
@@ -74,22 +81,30 @@ Github：[https://github.com/tech-shrimp/gemini-balance-lite](https://github.com
 * 打开Cherry studio，点击左下角设置，点击添加
 
 * 提供商名称随意填写，提供商类型选择OpenAI、Gemini均可。
+  
+  ![](images/api5.png)
 
 * 点击确定后在右侧输入API地址，也就是你刚才绑定的域名。
 
 * 上方的API密钥直接前往Google AI Studio网站，在左下角就可以看到获取按钮，复制后填写即可。
+  
+  ![](images/api6.png)
 
 * 在`模型`一栏中点击下方`添加`按钮
 
 * 添加你要用的模型。
   
   > （如果你不清楚如何填写，可前往[https://ai.google.dev/gemini-api/docs/models?hl=zh-cn#gemini-3-pro](https://ai.google.dev/gemini-api/docs/models?hl=zh-cn#gemini-3-pro)查看各模型的模型代码，复制填写即可）
+  
+  ![](images/api7.png)
 
 * 添加完成后可点击`健康监测`按钮检查是否可用。
 
 ### 2.开始使用
 
 * 回到助手页面，选择一个你刚才添加的模型，发送消息。
+  
+  ![](images/api8.png)
 
 ---
 
