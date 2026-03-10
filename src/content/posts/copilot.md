@@ -44,7 +44,7 @@ pubDate: 2026-03-10
 
 * 在Access下找到`Emails`，在图示位置输入你的教育邮箱并点击`Add`。然后到邮件里完成认证。
 
-<img title="" src="images/copilot2.png" alt="" data-align="inline">
+![](images/copilot2.png)
 
 > 认证完成后会显示`Verified`
 
