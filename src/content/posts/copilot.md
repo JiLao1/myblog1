@@ -1,6 +1,6 @@
 ---
 title: 如何通过GitHub学生认证并领取2年Copilot Pro
-published: 2026-3-10
+published: 2026-03-10
 pinned: false
 description: 快速通过学生认证并领取Copilot
 tags: [Github,白嫖,Copilot]
@@ -8,8 +8,8 @@ category: 教程
 licenseName: "CC BY 4.0"
 author: P_star7
 draft: false
-date: 2026-3-10
-pubDate: 2026-3-10
+date: 2026-03-10
+pubDate: 2026-03-10
 ---
 
 # 如何通过GitHub学生认证并领取2年Copilot Pro
