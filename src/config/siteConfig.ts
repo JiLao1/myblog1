@@ -32,11 +32,11 @@ export const siteConfig: SiteConfig = {
 
 	favicon: [
 		// 留空以使用默认 favicon
-		{
+		/*{
 			src: "/assets/images/favicon.ico", // 图标文件路径
 			theme: "light", // 可选，指定主题 'light' | 'dark'
 			sizes: "32x32", // 可选，图标大小
-		},
+		},*/
 	],
 
 	// 导航栏Logo
@@ -123,12 +123,16 @@ export const siteConfig: SiteConfig = {
 				title: "Hello! Im P_star7!",
 				// 主页横幅副标题
 				subtitle: [
-					"In Reddened Chrysalis, I Once Rest",
-					"From Shattered Sky, I Free Fall",
-					"Amidst Silenced Stars, I Deep Sleep",
-					"Upon Lighted Fyrefly, I Soon Gaze",
-					"From Undreamt Night, I Thence Shine",
-					"In Finalized Morrow, I Full Bloom",
+					"When the light is running low",
+					"And the shadows start to grow",
+					"And the places that you know",
+					"Seem like fantasy",
+					"There's a light inside your soul",
+					"That's still shining in the cold",
+					"With the truth",
+					"The promise in our hearts",
+					"Don't forget",
+					"I'm with you in the dark",
 				],
 				typewriter: {
 					//打字机开启 → 循环显示所有副标题
