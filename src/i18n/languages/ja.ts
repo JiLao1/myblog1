@@ -6,13 +6,40 @@ export const ja: Translation = {
 	[Key.about]: "について",
 	[Key.archive]: "アーカイブ",
 	[Key.search]: "検索",
+	[Key.searchNoResults]: "結果が見つかりません。",
+	[Key.searchTypeSomething]: "検索キーワードを入力してください。",
+	[Key.searchLoading]: "検索中...",
+	[Key.searchSummary]: "摘要",
+	[Key.searchContent]: "内容",
+	[Key.searchViewMore]: "さらに結果を表示 ({count} 件)",
 	[Key.other]: "その他",
+	[Key.all]: "すべて",
 
 	[Key.tags]: "タグ",
 	[Key.categories]: "カテゴリ",
 	[Key.recentPosts]: "最近の投稿",
 	[Key.postList]: "投稿リスト",
 	[Key.tableOfContents]: "目次",
+	[Key.tocEmpty]: "このページには目次がありません",
+	[Key.music]: "音楽",
+	[Key.musicNoPlaying]: "再生中なし",
+	[Key.musicLyrics]: "歌詞",
+	[Key.musicVolume]: "音量",
+	[Key.musicPlayMode]: "再生モードを切り替え",
+	[Key.musicPrev]: "前の曲",
+	[Key.musicNext]: "次の曲",
+	[Key.musicPlaylist]: "プレイリスト",
+	[Key.musicNoLyrics]: "歌詞なし",
+	[Key.musicLoadingLyrics]: "歌詞を読み込み中...",
+	[Key.musicFailedLyrics]: "歌詞の読み込みに失敗しました",
+	[Key.musicNoSongs]: "曲なし",
+	[Key.musicError]: "プレーヤーエラー",
+	[Key.musicPlay]: "再生",
+	[Key.musicPause]: "一時停止",
+	[Key.musicProgress]: "再生の進捗",
+	[Key.musicCover]: "カバー",
+	[Key.musicNoCover]: "カバーなし",
+	[Key.musicAudioPlayer]: "オーディオプレーヤー",
 
 	// お知らせ
 	[Key.announcement]: "お知らせ",
@@ -48,9 +75,12 @@ export const ja: Translation = {
 	[Key.systemMode]: "システム",
 
 	[Key.more]: "もっと",
+	[Key.collapse]: "折りたたむ",
 
 	[Key.author]: "著者",
 	[Key.publishedAt]: "公開日",
+	[Key.updatedAt]: "更新日",
+	[Key.readTime]: "読了時間",
 	[Key.license]: "ライセンス",
 	[Key.bangumi]: "バングミ",
 
@@ -171,11 +201,41 @@ export const ja: Translation = {
 	// ピン留め
 	[Key.pinned]: "ピン留め",
 
+	// 関連記事
+	[Key.relatedPosts]: "関連記事",
+	[Key.randomPosts]: "ランダム記事",
+	[Key.smartRecommend]: "スマート",
+	[Key.randomRecommend]: "ランダム",
+	[Key.noRelatedPosts]: "関連記事がありません",
+	[Key.noRandomPosts]: "ランダム記事がありません",
+
+	// 暗号化
+	[Key.postEncrypted]: "この記事は暗号化されています",
+
 	// 壁紙モード
 	[Key.wallpaperMode]: "壁紙モード",
 	[Key.wallpaperBannerMode]: "バナー壁紙",
+	[Key.wallpaperFullscreenMode]: "フルスクリーン壁紙",
 	[Key.wallpaperOverlayMode]: "透明",
 	[Key.wallpaperNoneMode]: "単色背景",
+
+	// 壁紙設定
+	[Key.wallpaperSettings]: "壁紙設定",
+	[Key.wallpaperTitle]: "ホーム壁紙タイトル",
+	[Key.wallpaperCarousel]: "壁紙カルーセル",
+	[Key.wavesAnimation]: "波アニメーション",
+	[Key.gradientTransition]: "グラデーション遷移",
+	[Key.sakuraEffect]: "桜エフェクト",
+	[Key.effectsSettings]: "エフェクト設定",
+	[Key.overlaySettings]: "透明設定",
+	[Key.overlayOpacity]: "壁紙の透明度",
+	[Key.overlayBlur]: "背景ぼかし",
+	[Key.overlayCardOpacity]: "カード透明度",
+
+	// 投稿リストレイアウト
+	[Key.postListLayout]: "投稿リストレイアウト",
+	[Key.postListLayoutList]: "リスト",
+	[Key.postListLayoutGrid]: "グリッド",
 
 	// スポンサーページ
 	[Key.sponsor]: "スポンサー",
@@ -195,7 +255,7 @@ export const ja: Translation = {
 	[Key.sponsorButtonText]:
 		"この記事が役に立ったなら、共有またはサポートをお願いします！",
 
-	[Key.shareOnSocial]: "共有",
+	[Key.shareOnSocial]: "記事を共有",
 	[Key.shareOnSocialDescription]:
 		"この記事が役に立ったなら、ぜひ他の人と共有してください！",
 
@@ -209,6 +269,7 @@ export const ja: Translation = {
 	[Key.siteStatsLastUpdate]: "最終活動",
 	[Key.siteStatsDaysAgo]: "{days} 日前",
 	[Key.siteStatsDays]: "{days} 日",
+	[Key.today]: "今日",
 
 	// カレンダーコンポーネント
 	[Key.calendarSunday]: "日",
@@ -237,4 +298,29 @@ export const ja: Translation = {
 	[Key.copyLink]: "リンクをコピー",
 	[Key.savePoster]: "ポスターを保存",
 	[Key.scanToRead]: "QRコードで読む",
+
+	// コードブロック折りたたみ設定
+	[Key.codeCollapsibleShowMore]: "展開する",
+	[Key.codeCollapsibleShowLess]: "折りたたむ",
+	[Key.codeCollapsibleExpanded]: "コードブロックが展開されました",
+	[Key.codeCollapsibleCollapsed]: "コードブロックが折りたたまれました",
+
+	// ギャラリーページ
+	[Key.gallery]: "ギャラリー",
+	[Key.galleryDescription]: "人生の美しい瞬間を記録する",
+	[Key.galleryPhotos]: "枚の写真",
+	[Key.galleryAlbums]: "冊のアルバム",
+	[Key.galleryNoAlbums]: "アルバムがありません",
+	[Key.galleryBackToAlbums]: "アルバム一覧に戻る",
+
+	// パスワード保護
+	[Key.passwordProtected]: "パスワード保護",
+	[Key.passwordProtectedDesc]:
+		"このコンテンツはパスワードで保護されています。表示するにはパスワードを入力してください。",
+	[Key.passwordHint]: "ヒント",
+	[Key.passwordPlaceholder]: "パスワードを入力",
+	[Key.passwordSubmit]: "ロック解除",
+	[Key.passwordError]: "パスワードが間違っています。もう一度お試しください。",
+	[Key.passwordProtectedRss]:
+		"この記事は暗号化されています。ウェブサイトにアクセスしてご覧ください。",
 };

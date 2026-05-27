@@ -1,47 +1,37 @@
 import type { ProfileConfig } from "../types/config";
 
 export const profileConfig: ProfileConfig = {
-	// 头像
-	avatar: "/assets/images/icon.jpg" ,
-	// 名字
+	avatar: "/assets/images/icon.jpg",
 	name: "P_star7",
-	// 个人签名
 	bio: "Hello, I'm P_star7.",
-
-	// 链接配置
-	// 已经预装的图标集：fa6-brands，fa6-regular，fa6-solid，material-symbols，simple-icons
-	// 访问https://icones.js.org/ 获取图标代码，
-	// 如果想使用尚未包含相应的图标集，则需要安装它
-	// `pnpm add @iconify-json/<icon-set-name>`
-	// showName: true 时显示图标和名称，false 时只显示图标
 	links: [
 		{
-			name: "Bilibli",
-			icon: "fa6-brands:bilibili",
+			name: "Bilibili",
+			icon: "simple-icons:bilibili",
 			url: "https://space.bilibili.com/356542846",
 			showName: false,
 		},
 		{
 			name: "GitHub",
-			icon: "fa6-brands:github",
+			icon: "fa7-brands:github",
 			url: "https://github.com/JiLao1",
 			showName: false,
 		},
 		{
 			name: "Tiktok",
-			icon: "fa6-brands:tiktok",
+			icon: "simple-icons:tiktok",
 			url: "https://www.douyin.com/user/MS4wLjABAAAAGE6EIUwY2Kx8X7UhTp2IOhKs5FdggZVJM2Rop-PoSxWTCh7Vh7EoMqtvSeTgQJsj?from_tab_name=main",
 			showName: false,
 		},
 		{
 			name: "Steam",
-			icon: "fa6-brands:steam-symbol",
+			icon: "fa7-brands:steam",
 			url: "https://steamcommunity.com/id/dingzhen520/",
 			showName: false,
 		},
 		{
 			name: "RSS",
-			icon: "fa6-solid:rss",
+			icon: "fa7-solid:rss",
 			url: "/rss/",
 			showName: false,
 		},

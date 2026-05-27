@@ -1,13 +1,14 @@
 import type { AnnouncementConfig } from "../types/config";
 
 export const announcementConfig: AnnouncementConfig = {
-	title: "公告", // 公告标题
-	content: "欢迎来到我的博客！不定期更新学习记录、教程、资源分享、碎碎念", // 公告内容
-	closable: true, // 允许用户关闭公告
+	title: "网站更新公告",
+	content:
+		"本站已更新至 Firefly 6.10.5 最新版本。本次更新带来了全新的分类栏、站内搜索、相册与加密内容支持，优化了壁纸/显示设置、文章展示和图标加载体验，后续会继续同步学习记录、教程与资源分享。",
+	closable: true,
 	link: {
-		enable: true, // 启用链接
-		text: "了解更多", // 链接文本
-		url: "/about/", // 链接 URL
-		external: false, // 内部链接
+		enable: true,
+		text: "查看文章",
+		url: "/archive/",
+		external: false,
 	},
 };

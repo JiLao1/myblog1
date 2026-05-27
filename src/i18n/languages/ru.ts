@@ -6,13 +6,40 @@ export const ru: Translation = {
 	[Key.about]: "О нас",
 	[Key.archive]: "Архив",
 	[Key.search]: "Поиск",
+	[Key.searchNoResults]: "Результаты не найдены.",
+	[Key.searchTypeSomething]: "Введите ключевое слово для поиска...",
+	[Key.searchLoading]: "Поиск...",
+	[Key.searchSummary]: "Резюме",
+	[Key.searchContent]: "Содержание",
+	[Key.searchViewMore]: "Показать еще ({count} шт)",
 	[Key.other]: "Прочее",
+	[Key.all]: "Все",
 
 	[Key.tags]: "Теги",
 	[Key.categories]: "Категории",
 	[Key.recentPosts]: "Последние посты",
 	[Key.postList]: "Список постов",
 	[Key.tableOfContents]: "Содержание",
+	[Key.tocEmpty]: "На этой странице нет оглавления",
+	[Key.music]: "Музыка",
+	[Key.musicNoPlaying]: "Ничего не воспроизводится",
+	[Key.musicLyrics]: "Текст песни",
+	[Key.musicVolume]: "Громкость",
+	[Key.musicPlayMode]: "Переключить режим воспроизведения",
+	[Key.musicPrev]: "Предыдущий трек",
+	[Key.musicNext]: "Следующий трек",
+	[Key.musicPlaylist]: "Плейлист",
+	[Key.musicNoLyrics]: "Текст песни отсутствует",
+	[Key.musicLoadingLyrics]: "Загрузка текста песни...",
+	[Key.musicFailedLyrics]: "Ошибка загрузки текста песни",
+	[Key.musicNoSongs]: "Нет песен",
+	[Key.musicError]: "Ошибка плеера",
+	[Key.musicPlay]: "Воспроизвести",
+	[Key.musicPause]: "Пауза",
+	[Key.musicProgress]: "Прогресс воспроизведения",
+	[Key.musicCover]: "Обложка",
+	[Key.musicNoCover]: "Нет обложки",
+	[Key.musicAudioPlayer]: "Аудиоплеер",
 
 	// Объявление
 	[Key.announcement]: "Объявление",
@@ -48,9 +75,12 @@ export const ru: Translation = {
 	[Key.systemMode]: "Система",
 
 	[Key.more]: "Ещё",
+	[Key.collapse]: "Свернуть",
 
 	[Key.author]: "Автор",
 	[Key.publishedAt]: "Опубликовано",
+	[Key.updatedAt]: "Обновлено",
+	[Key.readTime]: "Время чтения",
 	[Key.license]: "Лицензия",
 	[Key.bangumi]: "Бангуми",
 
@@ -173,11 +203,41 @@ export const ru: Translation = {
 	// Закреплено
 	[Key.pinned]: "Закреплено",
 
+	// Похожие статьи
+	[Key.relatedPosts]: "Похожие статьи",
+	[Key.randomPosts]: "Случайные статьи",
+	[Key.smartRecommend]: "Умный",
+	[Key.randomRecommend]: "Случайный",
+	[Key.noRelatedPosts]: "Нет похожих статей",
+	[Key.noRandomPosts]: "Нет случайных статей",
+
+	// Зашифровано
+	[Key.postEncrypted]: "Эта статья зашифрована",
+
 	// Режим обоев
 	[Key.wallpaperMode]: "Режим обоев",
 	[Key.wallpaperBannerMode]: "Баннер обои",
+	[Key.wallpaperFullscreenMode]: "Полноэкранные обои",
 	[Key.wallpaperOverlayMode]: "Прозрачный",
 	[Key.wallpaperNoneMode]: "Однотонный фон",
+
+	// Настройки обоев
+	[Key.wallpaperSettings]: "Настройки обоев",
+	[Key.wallpaperTitle]: "Заголовок главных обоев",
+	[Key.wallpaperCarousel]: "Карусель обоев",
+	[Key.wavesAnimation]: "Анимация волн",
+	[Key.gradientTransition]: "Градиентный переход",
+	[Key.sakuraEffect]: "Эффект сакуры",
+	[Key.effectsSettings]: "Настройки эффектов",
+	[Key.overlaySettings]: "Настройки прозрачности",
+	[Key.overlayOpacity]: "Прозрачность обоев",
+	[Key.overlayBlur]: "Размытие фона",
+	[Key.overlayCardOpacity]: "Прозрачность карточек",
+
+	// Макет списка сообщений
+	[Key.postListLayout]: "Макет списка сообщений",
+	[Key.postListLayoutList]: "Список",
+	[Key.postListLayoutGrid]: "Сетка",
 
 	// Страница спонсоров
 	[Key.sponsor]: "Спонсор",
@@ -197,7 +257,7 @@ export const ru: Translation = {
 	[Key.sponsorButtonText]:
 		"Если эта статья помогла вам, пожалуйста, поделитесь или поддержите!",
 
-	[Key.shareOnSocial]: "Поделиться",
+	[Key.shareOnSocial]: "Поделиться статьей",
 	[Key.shareOnSocialDescription]:
 		"Если эта статья помогла вам, пожалуйста, поделитесь ею с другими!",
 
@@ -211,6 +271,7 @@ export const ru: Translation = {
 	[Key.siteStatsLastUpdate]: "Последняя активность",
 	[Key.siteStatsDaysAgo]: "{days} дней назад",
 	[Key.siteStatsDays]: "{days} дней",
+	[Key.today]: "Сегодня",
 
 	// Компонент календаря
 	[Key.calendarSunday]: "Вс",
@@ -239,4 +300,29 @@ export const ru: Translation = {
 	[Key.copyLink]: "Копировать ссылку",
 	[Key.savePoster]: "Сохранить постер",
 	[Key.scanToRead]: "Сканируйте, чтобы прочитать",
+
+	// Конфигурация блоков коллапсируемого кода
+	[Key.codeCollapsibleShowMore]: "Развернуть",
+	[Key.codeCollapsibleShowLess]: "Свернуть",
+	[Key.codeCollapsibleExpanded]: "Блок кода развернут",
+	[Key.codeCollapsibleCollapsed]: "Блок кода свернут",
+
+	// Страница галереи
+	[Key.gallery]: "Галерея",
+	[Key.galleryDescription]: "Запечатлеть прекрасные моменты жизни",
+	[Key.galleryPhotos]: "фото",
+	[Key.galleryAlbums]: "альбомов",
+	[Key.galleryNoAlbums]: "Пока нет альбомов",
+	[Key.galleryBackToAlbums]: "Вернуться к альбомам",
+
+	// Защита паролем
+	[Key.passwordProtected]: "Защищено паролем",
+	[Key.passwordProtectedDesc]:
+		"Этот контент защищён паролем. Пожалуйста, введите пароль для просмотра.",
+	[Key.passwordHint]: "Подсказка",
+	[Key.passwordPlaceholder]: "Введите пароль",
+	[Key.passwordSubmit]: "Разблокировать",
+	[Key.passwordError]: "Неверный пароль, попробуйте снова.",
+	[Key.passwordProtectedRss]:
+		"Эта статья зашифрована. Пожалуйста, посетите сайт для просмотра.",
 };
