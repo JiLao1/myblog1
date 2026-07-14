@@ -1,5 +1,4 @@
-import type { SiteConfig } from "@/types/config";
-import { fontConfig } from "./fontConfig";
+import type { SiteConfig } from "@/types/siteConfig";
 
 const SITE_LANG = "zh_CN";
 
@@ -19,8 +18,6 @@ export const siteConfig: SiteConfig = {
 		"P_star7",
 	],
 
-	lang: SITE_LANG,
-
 	themeColor: {
 		hue: 235,
 		fixed: false,
@@ -28,47 +25,22 @@ export const siteConfig: SiteConfig = {
 	},
 
 	pageWidth: 100,
-
 	card: {
 		border: true,
 		followTheme: false,
 	},
 
-	font: fontConfig,
-
-	siteStartDate: "2025-12-21",
-	timezone: "Asia/Shanghai",
-
-	rehypeCallouts: {
-		theme: "github",
-	},
-
-	bangumi: {
-		userId: "",
-		categoryOrder: ["anime", "book", "music", "game"],
-	},
-
-	generateOgImages: false,
 	favicon: [
-		{
-			src: "/favicon/avatar-32.png",
-			sizes: "32x32",
-		},
-		{
-			src: "/favicon/avatar-180.png",
-			sizes: "180x180",
-		},
-		{
-			src: "/favicon/avatar-192.png",
-			sizes: "192x192",
-		},
+		{ src: "/favicon/avatar-32.png", sizes: "32x32" },
+		{ src: "/favicon/avatar-180.png", sizes: "180x180" },
+		{ src: "/favicon/avatar-192.png", sizes: "192x192" },
 	],
 
 	navbar: {
 		logo: {
 			type: "image",
 			value: "/assets/images/icon.jpg",
-			alt: "Logo",
+			alt: "P_star7",
 		},
 		title: "P_star7",
 		widthFull: false,
@@ -77,9 +49,8 @@ export const siteConfig: SiteConfig = {
 		stickyNavbar: true,
 	},
 
-	showLastModified: true,
-	outdatedThreshold: 30,
-	sharePoster: true,
+	siteStartDate: "2025-12-21",
+	timezone: "Asia/Shanghai",
 
 	pages: {
 		friends: true,
@@ -87,19 +58,60 @@ export const siteConfig: SiteConfig = {
 		guestbook: true,
 		bangumi: false,
 		gallery: false,
+		anime: false,
 	},
 
 	categoryBar: true,
+	foldArticle: true,
 
 	postListLayout: {
 		defaultMode: "list",
 		mobileDefaultMode: "list",
-		showTags: true,
-		descriptionLines: 2,
 		allowSwitch: true,
+		descriptionLines: 2,
+		showStatsIcons: true,
+		tagsPosition: "meta",
+		meta: {
+			showPublished: true,
+			showCategory: true,
+			showTags: true,
+			tagCount: 5,
+			showWords: false,
+			showReadingTime: false,
+		},
+		stats: {
+			showPublished: true,
+			showWords: true,
+			showReadingTime: true,
+		},
 		grid: {
 			masonry: true,
 			columnWidth: 320,
+		},
+	},
+
+	post: {
+		rehypeCallouts: {
+			theme: "github",
+			enablePythonMarkdownAdmonitions: false,
+		},
+		showLastModified: true,
+		outdatedThreshold: 30,
+		sharePoster: true,
+		generateOgImages: false,
+	},
+
+	bangumi: {
+		userId: "",
+		mode: "dynamic",
+		apiUrl: "https://bgmapi.anibt.net",
+		subjectBaseUrl: "https://bgmmi.anibt.net/subject/",
+		categoryOrder: ["anime", "book", "music", "game"],
+	},
+
+	anime: {
+		bilibili: {
+			uid: "356542846",
 		},
 	},
 
@@ -107,36 +119,11 @@ export const siteConfig: SiteConfig = {
 		postsPerPage: 8,
 	},
 
-	analytics: {
-		googleAnalyticsId: "",
-		microsoftClarityId: "",
-		umamiAnalytics: {
-			websiteId: "",
-			scriptUrl: "https://cloud.umami.is/script.js",
-			replaysScriptUrl: "https://cloud.umami.is/recorder.js",
-			trackOutboundLinks: true,
-			collectWebVitals: false,
-			replays: {
-				enabled: false,
-				sampleRate: 0.15,
-				maskLevel: "moderate",
-				maxDuration: 300000,
-				blockSelector: "",
-			},
-		},
-		la51Analytics: {
-			Id: "",
-			sdkUrl: "",
-			ck: "",
-			autoTrack: false,
-			hashMode: false,
-			screenRecord: true,
-		},
-	},
-
 	imageOptimization: {
 		formats: "webp",
 		quality: 85,
 		noReferrerDomains: [],
 	},
+
+	lang: SITE_LANG,
 };

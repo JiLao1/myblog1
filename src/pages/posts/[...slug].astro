@@ -146,6 +146,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
   postSlug={entry.id}
   postCategory={entry.data.category || undefined}
   headings={headings}
+  encrypted={!!entry.data.password}
   bannerPostMeta={bannerPostMeta}
 >
   <!-- KaTeX 按需加载 - 仅在文章页面 -->
@@ -175,7 +176,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
           <div
             class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"
           >
-            <Icon name="material-symbols:notes-rounded" />
+            <Icon is:inline name="material-symbols:notes-rounded" />
           </div>
           <div class="text-sm">
             {remarkPluginFrontmatter.words}
@@ -186,7 +187,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
           <div
             class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"
           >
-            <Icon name="material-symbols:schedule-outline-rounded" />
+            <Icon is:inline name="material-symbols:schedule-outline-rounded" />
           </div>
           <div class="text-sm">
             {remarkPluginFrontmatter.minutes}
@@ -205,7 +206,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
             <div
               class="transition h-6 w-6 rounded-md bg-black/5 dark:bg-white/10 text-black/50 dark:text-white/50 flex items-center justify-center mr-2"
             >
-              <Icon name="material-symbols:lock-outline" />
+              <Icon is:inline name="material-symbols:lock-outline" />
             </div>
             <div class="text-sm">
               {i18n(I18nKey.postEncrypted)}
@@ -270,15 +271,15 @@ const relatedPosts = await getRelatedPosts(entry, 5);
             <Content />
           </Markdown>
 
-          {/* 赞助按钮 & 分享按钮 */}
+          {/* 打赏按钮 & 分享按钮 */}
           {
-            (siteConfig.sharePoster || (sponsorConfig.showButtonInPost && siteConfig.pages.sponsor)) && (
+            (siteConfig.post.sharePoster || (sponsorConfig.showButtonInPost && siteConfig.pages.sponsor)) && (
               <div class="mb-6 rounded-xl onload-animation">
                 <div class="p-6 bg-(--license-block-bg) rounded-xl">
                   <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div class="flex items-center gap-3 flex-1">
                       <div class="h-12 w-12 rounded-lg bg-(--primary) flex items-center justify-center text-white dark:text-black/70 shrink-0">
-                        <Icon
+                        <Icon is:inline
                           name={sponsorConfig.showButtonInPost &&
                           siteConfig.pages.sponsor
                             ? "material-symbols:favorite"
@@ -306,7 +307,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
                     </div>
                     <div class="flex items-center gap-3">
                       {
-                        siteConfig.sharePoster && (
+                        siteConfig.post.sharePoster && (
                           <SharePoster
                             client:load
                             title={entry.data.title}
@@ -327,7 +328,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
                             class="inline-flex items-center gap-2 px-6 py-3 bg-(--primary) text-white dark:text-black/70 rounded-lg font-medium hover:bg-(--primary)/80 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
                           >
                             <span>{i18n(I18nKey.sponsor)}</span>
-                            <Icon name="fa7-solid:arrow-right" class="text-sm" />
+                            <Icon is:inline name="fa7-solid:arrow-right" class="text-sm" />
                           </a>
                         )
                       }
@@ -359,15 +360,15 @@ const relatedPosts = await getRelatedPosts(entry, 5);
             <Content />
           </Markdown>
 
-          {/* 赞助按钮 & 分享按钮 */}
+          {/* 打赏按钮 & 分享按钮 */}
           {
-            (siteConfig.sharePoster || (sponsorConfig.showButtonInPost && siteConfig.pages.sponsor)) && (
+            (siteConfig.post.sharePoster || (sponsorConfig.showButtonInPost && siteConfig.pages.sponsor)) && (
               <div class="mb-6 rounded-xl onload-animation">
                 <div class="p-6 bg-(--license-block-bg) rounded-xl">
                   <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
                     <div class="flex items-center gap-3 flex-1">
                       <div class="h-12 w-12 rounded-lg bg-(--primary) flex items-center justify-center text-white dark:text-black/70 shrink-0">
-                        <Icon
+                        <Icon is:inline
                           name={sponsorConfig.showButtonInPost &&
                           siteConfig.pages.sponsor
                             ? "material-symbols:favorite"
@@ -395,7 +396,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
                     </div>
                     <div class="flex items-center gap-3">
                       {
-                        siteConfig.sharePoster && (
+                        siteConfig.post.sharePoster && (
                           <SharePoster
                             client:load
                             title={entry.data.title}
@@ -416,7 +417,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
                             class="inline-flex items-center gap-2 px-6 py-3 bg-(--primary) text-white dark:text-black/70 rounded-lg font-medium hover:bg-(--primary)/80 hover:scale-105 active:scale-95 transition-all whitespace-nowrap"
                           >
                             <span>{i18n(I18nKey.sponsor)}</span>
-                            <Icon name="fa7-solid:arrow-right" class="text-sm" />
+                            <Icon is:inline name="fa7-solid:arrow-right" class="text-sm" />
                           </a>
                         )
                       }
@@ -448,10 +449,10 @@ const relatedPosts = await getRelatedPosts(entry, 5);
 
   <!-- 上次编辑时间 -->
   {
-    siteConfig.showLastModified && (() => {
+    siteConfig.post.showLastModified && (() => {
       const lastModified = dayjs(entry.data.updated || entry.data.published);
       const dateStr = lastModified.format("YYYY-MM-DD");
-      const outdatedThreshold = siteConfig.outdatedThreshold ?? 1;
+      const outdatedThreshold = siteConfig.post.outdatedThreshold ?? 1;
 
       // 1. 預設加上 hidden 隱藏，並把時間與閾值綁在 data-* 屬性
       return (
@@ -463,7 +464,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
         >
           <div class="flex items-center gap-2">
             <div class="transition h-9 w-9 rounded-lg overflow-hidden relative flex items-center justify-center mr-0">
-              <Icon
+              <Icon is:inline
                 name="material-symbols:history-rounded"
                 class="text-4xl text-(--primary) transition-transform group-hover:translate-x-0.5 bg-(--enter-btn-bg) p-2 rounded-md"
               />
@@ -485,14 +486,15 @@ const relatedPosts = await getRelatedPosts(entry, 5);
   }
 
   <script>
-    import dayjs from "dayjs";
-
     const card = document.getElementById('outdated-card');
-    
-    if (card) {
-      // 讀取伺服器給的日期，並用 dayjs 直接算出差異天數
-      const lastModified = dayjs(card.dataset.date);
-      const daysDiff = dayjs().diff(lastModified, "day");
+    const dateStr = card?.dataset.date;
+
+    if (card && dateStr) {
+      // 讀取伺服器給的日期，用原生 Date 算出差異天數（避免向客戶端打包整個 dayjs）
+      const lastModified = new Date(dateStr);
+      const daysDiff = Math.floor(
+        (Date.now() - lastModified.getTime()) / 86400000,
+      );
       const threshold = Number(card.dataset.threshold);
 
       // 如果超過閾值，就顯示卡片與提示文字
@@ -504,7 +506,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
           if (textEl && textEl.dataset.template) {
             textEl.textContent = `，${textEl.dataset.template.replace("{days}", daysDiff.toString())}`;
           }
-          
+
           const warningEl = document.getElementById('outdated-warning');
           if (warningEl) {
             warningEl.classList.remove('hidden');
@@ -522,7 +524,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
       class="w-full font-bold overflow-hidden active:scale-95"
     >
       <div class="btn-card rounded-2xl w-full h-15 max-w-full px-4 flex items-center justify-start! gap-4">
-        <Icon
+        <Icon is:inline
           name="material-symbols:chevron-left-rounded"
           class="text-[2rem] text-(--primary)"
         />
@@ -540,7 +542,7 @@ const relatedPosts = await getRelatedPosts(entry, 5);
         <div class="overflow-hidden transition text-ellipsis whitespace-nowrap max-w-[calc(100%-3rem)] text-black/75 dark:text-white/75">
           {entry.data.prevTitle || i18n(I18nKey.home)}
         </div>
-        <Icon
+        <Icon is:inline
           name="material-symbols:chevron-right-rounded"
           class="text-[2rem] text-(--primary)"
         />

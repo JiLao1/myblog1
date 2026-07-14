@@ -1,4 +1,4 @@
-import type { FriendLink, FriendsPageConfig } from "../types/config";
+import type { FriendLink, FriendsPageConfig } from "../types/friendsConfig";
 
 export const friendsPageConfig: FriendsPageConfig = {
 	title: "",
