@@ -25,7 +25,7 @@ licenseUrl: https://creativecommons.org/licenses/by-nc-sa/4.0/
 2. **AstrBot**：处理消息、管理插件、维护人格和调用大模型。
 3. **DeepSeek API**：生成聊天回复。
 
-消息链路如下。Firefly 会在构建博客时将这张 Mermaid 图渲染成同时适配亮色和暗色模式的静态 SVG。
+消息链路如下。
 
 ```mermaid
 flowchart LR
