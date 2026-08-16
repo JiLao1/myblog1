@@ -4,7 +4,7 @@ published: 2026-08-16
 updated: 2026-08-16
 description: 使用 AstrBot、NapCat、DeepSeek API 和 Docker Compose，从零搭建一个可在 QQ 群中聊天的机器人。
 tags: [QQ机器人, AstrBot, NapCat, DeepSeek, Docker]
-category: 人工智能
+category: 教程
 draft: false
 pinned: false
 slug: deploy-your-own-qq-chatbot
