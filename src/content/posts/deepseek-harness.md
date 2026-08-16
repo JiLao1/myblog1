@@ -472,6 +472,11 @@ npx -y @deepseek-ai/dsh@0.1.0-rc.6 web
 
 搭建客户端时不必独自从零编写所有代码。你可以让任意擅长编程的 Agent 参与，也可以直接让刚部署好的 DeepSeek Harness 在一个空工作区中搭建自己的桌面外壳。关键是先写清需求和安全边界，再审查它创建的命令、依赖和进程管理逻辑。
 
+
+
+
+# 安装包
+
 在这里也分享一份我自己打包好的桌面客户端，可以直接一键安装。(安装前请自行安装好Node.js)
 
 [https://wwbdl.lanzouw.com/iLu3x42s7cyd](https://wwbdl.lanzouw.com/iLu3x42s7cyd)
