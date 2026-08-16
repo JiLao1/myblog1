@@ -475,7 +475,7 @@ npx -y @deepseek-ai/dsh@0.1.0-rc.6 web
 在这里也分享一份我自己打包好的桌面客户端，可以直接一键安装。(安装前请自行安装好Node.js)
 
 [https://wwbdl.lanzouw.com/iLu3x42s7cyd](https://wwbdl.lanzouw.com/iLu3x42s7cyd)
-密码:b3ba
+密码  b3ba
 
 > [!NOTE] 参考资料
 > 本文依据 DeepSeek Harness 官方仓库、官方 Web UI 用户指南和模型配置说明整理。项目处于快速迭代阶段，实际界面和命令应以官方仓库最新说明为准。
