@@ -1,6 +1,4 @@
 {
-  "src:assets/images/firefly.png": "72d3af9ee699aced93",
-  "src:assets/images/cover.avif": "7c6f966a628a816e82",
   "src:assets/images/avatar.avif": "dcd8d5d1cecabea9a9",
   "public:gallery/firefly-2026/cover.avif": "7588a28a8f989e8d88",
   "public:gallery/firefly-2026/1.avif": "c8bca9dde6d2babfb5",
@@ -77,5 +75,7 @@
   "src:content/posts/guide/cover.webp": "c5bd9ec6c8abbbbdad",
   "public:assets/images/sponsor/wexin.png": "5bc08a56bf8796d5b4",
   "public:assets/images/sponsor/alipay.jpg": "8fb1df90b1dd6994cf",
-  "public:assets/images/sponsor/afdian.png": "e1bde8deb9e6d5b9de"
+  "public:assets/images/sponsor/afdian.png": "e1bde8deb9e6d5b9de",
+  "src:assets/images/logo/firefly-light.png": "000000000000000000",
+  "src:assets/images/logo/firefly-dark.png": "ffffffffffffffffff"
 }

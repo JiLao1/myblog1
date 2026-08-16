@@ -3,7 +3,7 @@ import type { AnnouncementConfig } from "../types/announcementConfig";
 export const announcementConfig: AnnouncementConfig = {
 	title: "网站更新公告",
 	content:
-		"本站已更新至 Firefly 6.13.9 最新版本。本次升级加入 Astro 7、分类与标签页、图片低清占位优化、字体子集化和新版 Mermaid 图表渲染，并继续优化文章展示、壁纸与移动端体验。",
+		"本站已更新至 Firefly 6.15.9 最新版本。本次升级加入动态内容、Bilibili/VNDB/MAL 页面能力、书签导航、显示设置和更多图片与文章展示优化，并继续保留本站原有的个人内容与配置。",
 	closable: true,
 	link: {
 		enable: true,
