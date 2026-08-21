@@ -79,5 +79,6 @@
   "src:assets/images/logo/firefly-light.png": "000000000000000000",
   "src:assets/images/logo/firefly-dark.png": "ffffffffffffffffff",
   "src:content/posts/deepseek-harness/models.png": "f7f8f8f9f9faf4f4f5",
-  "src:content/posts/deepseek-harness/client-icon.png": "6c87ff6078fa5c72d8"
+  "src:content/posts/deepseek-harness/client-icon.png": "6c87ff6078fa5c72d8",
+  "public:assets/images/dynamic/deepseek-v4-flash-vision-exp.png": "eeeeeff1f1f2f1f1f1"
 }
