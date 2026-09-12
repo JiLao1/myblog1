@@ -32,3 +32,7 @@ Use Conventional Commits, matching the current history: `feat: ...`, `fix: ...`,
 ## Security & Configuration Tips
 
 Do not commit secrets, tokens, or service keys in config files. Keep deployment-specific settings in the target platform environment, and review generated files such as `dist`, `src/constants/lqips.json`, and `src/constants/icons.ts` before committing them.
+
+## Blog Writing Preferences
+
+Before writing or substantially editing posts, read `docs/blog-writing-guide.md`. The owner wants future articles to actively use Firefly's supported writing features where they improve understanding: callouts, code groups and highlighting, diagrams, image grids and captions, repository cards, and related-post Wiki Links. Choose features for the content rather than filling a quota. Check local configuration and implementations before copying syntax from newer online docs; the current checkout does not implement every documented feature. Preserve existing post URLs and follow the owner's language and publication intent.
