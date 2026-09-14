@@ -28,7 +28,7 @@
 
 ---
 📖 README：
-**[简体中文](../README.md)** | **[繁體中文](README.zh-TW.md)** | **[English](../README.en.md)** | **[日本語](README.ja.md)**
+**[简体中文](../README.md)** | **[繁體中文](README.zh-TW.md)** | **[English](../README.en.md)** | **[日本語](README.ja.md)** | **[한국어](README.ko.md)**
 
 🚀 クイックガイド：
 [**🖥️ライブデモ**](https://firefly.cuteleaf.cn/) /
@@ -187,7 +187,7 @@ src/
 │   ├── effectsConfig.ts          # アニメーションエフェクト設定（桜など）
 │   ├── expressiveCodeConfig.ts   # コードハイライト設定
 │   ├── fontConfig.ts             # フォント設定
-│   ├── footerConfig.ts           # フッター設定
+│   ├── FooterConfig.html           # フッター設定
 │   ├── friendsConfig.ts          # 友人リンク設定
 │   ├── galleryConfig.ts          # ギャラリー設定
 │   ├── licenseConfig.ts          # ライセンス設定

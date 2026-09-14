@@ -1,0 +1,32 @@
+{
+	"astrbotdevs/astrbot": {
+		"description": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
+		"language": "Python",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/197911947?v=4",
+		"license": "AGPL-3.0"
+	},
+	"bigpizzav3/codexplusplus": {
+		"description": "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服",
+		"language": "Rust",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/237402563?v=4",
+		"license": "AGPL-3.0"
+	},
+	"deepseek-ai/deepseek-harness": {
+		"description": "DeepSeek Harness: Everything is a Plugin.",
+		"language": "TypeScript",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/148330874?v=4",
+		"license": "MIT"
+	},
+	"napneko/napcatqq": {
+		"description": "Modern protocol-side framework based on NTQQ",
+		"language": "TypeScript",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/165024194?v=4",
+		"license": "NOASSERTION"
+	},
+	"openai/codex": {
+		"description": "Lightweight coding agent that runs in your terminal",
+		"language": "Rust",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/14957082?v=4",
+		"license": "Apache-2.0"
+	}
+}

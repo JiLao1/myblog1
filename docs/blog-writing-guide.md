@@ -1,6 +1,6 @@
 # 本博客的 Firefly 写作指南
 
-核对日期：2026-09-11。用户偏好：以后的文章主动多用 Firefly 提供的功能，让教程更直观、易读、便于操作；按内容选择，不为展示功能而堆砌组件。
+核对日期：2026-09-14（Firefly 6.16.8）。用户偏好：以后的文章主动多用 Firefly 提供的功能，让教程更直观、易读、便于操作；按内容选择，不为展示功能而堆砌组件。
 
 ## 依据与适用范围
 
@@ -126,7 +126,7 @@ PlantUML 已启用，适合 UML 专题，用 `plantuml` 围栏包裹 `@startuml`
 ::github{repo="CuteLeaf/Firefly"}
 ```
 
-卡片数据依赖 GitHub API；工具名称、用途和重要链接也要在正文写清楚。
+卡片支持构建时缓存和客户端更新，数据仍依赖 GitHub API；工具名称、用途和重要链接也要在正文写清楚。
 
 当前 Wiki Link 插件支持行内引用、锚点与独立文章卡片：
 
@@ -166,11 +166,11 @@ Firefly 还提供分类/标签/归档、搜索、目录、阅读统计、评论�
 
 短消息可用 `src/content/dynamic/*.md`（`published`，可选 `pinned`、`location`）；完整教程仍放 posts。未经内容任务要求，不自动把文章拆成动态或修改站点功能。
 
-已确认的在线文档与本地差异：
+本次升级后的能力与仍需注意的差异：
 
-- 在线 `series` / `seriesOrder` 文章系列：本地 schema、路由和组件未实现；连载暂用相关 Wiki Link 串联。
-- 在线沉浸阅读模式：本地未发现对应配置和实现，不能承诺已有按钮。
-- 在线项目内容集合：本地 `src/content.config.ts` 只有 posts、spec、dynamic，不能直接新建 projects 内容期待自动生成页面。
+- 文章系列已支持：在 frontmatter 中设置完全一致的 `series` 名称与数字 `seriesOrder`，自动显示系列导航，也可访问 `/series/`。
+- 沉浸阅读已启用：桌面端文章页可进入专注阅读模式，默认不自动进入，目录位于左侧。
+- 项目集合已支持 `src/content/projects/*.{md,mdx}`；当前 `pages.projects: false`，尚未导入模板示例项目。准备好真实项目内容后再开启。
 - 在线封面叠加、回退图等配置比本地丰富；新增字段前先核对本地类型。
 - Python 风格提示框、随机封面虽然模板提供能力，但当前关闭。
 
@@ -183,3 +183,16 @@ Firefly 还提供分类/标签/归档、搜索、目录、阅读统计、评论�
 3. 检查元数据、图片、代码、引用目标和外链。区分实测结果与推测，不伪造截图或工具输出。
 4. 涉及正文渲染或资源时按仓库要求运行 `pnpm check`、`pnpm type-check`、`pnpm build`；通过 dev/preview 检查图表、代码分组、图片、移动端和明暗主题。
 5. 本指南本身位于 docs，不进入文章集合；只更新写作说明时无需重新构建网站。
+
+
+## 6.16.8 新增写作能力
+
+MDX 可从 `@components/firefly-mdx` 导入 `Badge`、`Steps`、`StepItem`、`Timeline`、`TimelineItem`、`TabGroup`。以本地组件 props 为准；只有需要这些组件时才转为 `.mdx`。
+
+- `TabGroup`：分组展示多种内容，传 `labels` 数组，使用 `client:load` 启用交互。
+- `Steps` / `StepItem`：安装和操作步骤。
+- `Timeline` / `TimelineItem`：项目发展或经历时间线，可指定 `date`、`title`。
+- `Badge`：简短的状态或版本标识。
+- 系列文章：使用 `series: "系列名称"` 和 `seriesOrder: 1`，仍保留稳定 slug。
+- 订阅：新增 `/atom/`、`/atom.xml`；RSS 和 Atom 正文策略由 `siteConfig.feed.contentMode` 控制。
+- `/llms.txt` 自动提供站点文章索引。
