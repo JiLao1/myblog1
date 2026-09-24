@@ -476,7 +476,7 @@ npx -y @deepseek-ai/dsh@0.1.0-rc.6 web
 
 # 安装包（已过时）
 
-## 此包已过时，请自行根据教程搭建最新版本Deepseek Harness，或查看本网站的新文章：`HarnessDesk：更好的Deepseek Harness客户端`
+## 此包已过时，请自行根据教程搭建最新版本Deepseek Harness
 
 在这里也分享一份我自己打包好的桌面客户端，可以直接一键安装。(安装前请自行安装好Node.js)
 
