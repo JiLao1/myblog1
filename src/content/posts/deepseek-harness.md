@@ -1,7 +1,7 @@
 ---
-title: 教你使用Deepseek Harness(附一键安装包)
+title: 教你使用Deepseek Harness
 published: 2026-08-17
-updated: 2026-08-17
+updated: 2026-08-23
 description: 详细介绍 DeepSeek Harness 的官方部署方法，并从零搭建一个双击即用的 Windows 桌面客户端。
 tags: [DeepSeek, Harness, AI Agent, Electron, 教程]
 category: 教程
@@ -474,8 +474,9 @@ npx -y @deepseek-ai/dsh@0.1.0-rc.6 web
 
 
 
+# 安装包（已过时）
 
-# 安装包
+## 此包已过时，请自行根据教程搭建最新版本Deepseek Harness，或查看本网站的新文章：`HarnessDesk：更好的Deepseek Harness客户端`
 
 在这里也分享一份我自己打包好的桌面客户端，可以直接一键安装。(安装前请自行安装好Node.js)
 
