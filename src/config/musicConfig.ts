@@ -7,6 +7,7 @@ export const musicPlayerConfig: MusicPlayerConfig = {
 	volume: 0.7,
 	playMode: "list",
 	showLyrics: true,
+	showFloatingLyrics: false,
 
 	meting: {
 		api: "https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r",

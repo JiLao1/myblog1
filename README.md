@@ -8,8 +8,8 @@
 > 
 > ![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) 
 ![pnpm >= 11](https://img.shields.io/badge/pnpm-%3E%3D9-blue)
-![Astro](https://img.shields.io/badge/Astro-7.2.0-orange)
-![TypeScript](https://img.shields.io/badge/TypeScript-6.0.3-blue)
+![Astro](https://img.shields.io/badge/Astro-7-orange)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-blue)
 >
 > [![Stars](https://img.shields.io/github/stars/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/stargazers)
 [![Forks](https://img.shields.io/github/forks/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/network/members)
@@ -77,7 +77,7 @@
 - [x] **Astro + Tailwind CSS** - 基于现代技术栈的超快静态站点生成
 - [x] **流畅动画** - Swup 页面过渡动画，提供丝滑的浏览体验
 - [x] **响应式设计** - 完美适配桌面端、平板和移动设备
-- [x] **多语言支持** - i18n 国际化，UI 支持简体中文、繁体中文、英文、日文、俄语、韩文
+- [x] **多语言支持** - i18n 国际化，UI 支持简体中文、繁体中文、英文、日文、俄语、韩文、西班牙语
 - [x] **全文搜索** - 基于 Pagefind 的客户端搜索，支持文章内容索引
 
 ### 个性化
@@ -168,6 +168,7 @@ const SITE_LANG = "zh_CN";
 - `ja` - 日文
 - `ru` - 俄文
 - `ko` - 韩文
+- `es` - 西班牙文
 
 ### 配置文件结构
 

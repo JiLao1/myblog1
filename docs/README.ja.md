@@ -8,8 +8,8 @@
 > 
 > ![Node.js >= 22](https://img.shields.io/badge/node.js-%3E%3D22-brightgreen) 
 ![pnpm >= 11](https://img.shields.io/badge/pnpm-%3E%3D9-blue)
-![Astro](https://img.shields.io/badge/Astro-7.2.0-orange)
-![TypeScript](https://img.shields.io/badge/TypeScript-6.0.3-blue)
+![Astro](https://img.shields.io/badge/Astro-7-orange)
+![TypeScript](https://img.shields.io/badge/TypeScript-6-blue)
 >
 > [![Stars](https://img.shields.io/github/stars/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/stargazers)
 [![Forks](https://img.shields.io/github/forks/CuteLeaf/Firefly?style=social)](https://github.com/CuteLeaf/Firefly/network/members)
@@ -77,7 +77,7 @@
 - [x] **Astro + Tailwind CSS** - モダンな技術スタックベースの超高速静的サイト生成
 - [x] **スムーズなアニメーション** - Swup ページトランジションアニメーションで滑らかなブラウジング体験
 - [x] **レスポンシブデザイン** - デスクトップ、タブレット、モバイルデバイスに完璧に対応
-- [x] **多言語サポート** - i18n 国際化UI、簡体字中国語、繁体字中国語、英語、日本語、ロシア語、韓国語をサポート
+- [x] **多言語サポート** - i18n 国際化UI、簡体字中国語、繁体字中国語、英語、日本語、ロシア語、韓国語、スペイン語をサポート
 - [x] **全文検索** - Pagefind ベースのクライアントサイド検索、記事コンテンツのインデックスをサポート
 
 ### パーソナライゼーション
@@ -169,6 +169,7 @@ const SITE_LANG = "zh_CN";
 - `ja` - 日本語
 - `ru` - ロシア語
 - `ko` - 韓国語
+- `es` - スペイン語
 
 ### 設定ファイル構造
 

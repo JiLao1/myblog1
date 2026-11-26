@@ -3,12 +3,12 @@ import type { AnnouncementConfig } from "../types/announcementConfig";
 export const announcementConfig: AnnouncementConfig = {
 	title: "网站更新公告",
 	content:
-		"本站已升级至 Firefly 6.16.8！新增文章系列、桌面端沉浸阅读和 Atom 订阅，优化导航、壁纸与阅读体验。后续文章也会用上新的步骤条、时间线和标签页，欢迎来逛逛。",
+		"博客升级到 Firefly 6.17.0 啦！教程里的代码标签页现在可以把说明和命令放在一起，手机菜单和平板目录也修了一些显示问题。旧文章的链接照常可用。",
 	closable: true,
 	link: {
 		enable: true,
-		text: "查看文章",
-		url: "/archive/",
+		text: "查看这次更新",
+		url: "/dynamic/#dynamic-2026-11-26-firefly-6-17-0",
 		external: false,
 	},
 };

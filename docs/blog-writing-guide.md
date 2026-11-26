@@ -1,10 +1,10 @@
 # 本博客的 Firefly 写作指南
 
-核对日期：2026-09-14（Firefly 6.16.8）。用户偏好：以后的文章主动多用 Firefly 提供的功能，让教程更直观、易读、便于操作；按内容选择，不为展示功能而堆砌组件。
+最近核对于 2026-11-26，当前版本为 Firefly 6.17.0。以后写文章时，主动选用能让内容更直观、易读、便于操作的 Firefly 功能。
 
 ## 依据与适用范围
 
-已阅读官方[快速开始](https://docs-firefly.cuteleaf.cn/zh/guide/getting-started.html)、[编写文章](https://docs-firefly.cuteleaf.cn/zh/guide/writing.html)、代码块、Mermaid、PlantUML、文章加密、封面图片、站点配置、沉浸阅读、动态、相册、项目和许可证文档，并核对当前仓库配置、Markdown 插件及已有文章。本文是本地写作约定和语法速查，不是对官方文档的完整转载。
+本文记录本博客的写作约定和语法，并以当前仓库配置、Markdown 插件和已有文章为依据。[快速开始](https://docs-firefly.cuteleaf.cn/zh/guide/getting-started.html) · [编写文章](https://docs-firefly.cuteleaf.cn/zh/guide/writing.html) · [代码块](https://docs-firefly.cuteleaf.cn/zh/guide/code-block.html) · [Mermaid](https://docs-firefly.cuteleaf.cn/zh/guide/mermaid.html) · [PlantUML](https://docs-firefly.cuteleaf.cn/zh/guide/plantuml.html) · [封面图片](https://docs-firefly.cuteleaf.cn/zh/guide/cover-image.html)
 
 官方文档会先于本仓库更新。使用能力时以 `src/content.config.ts`、`astro.config.mjs`、`src/config/`、`src/plugins/` 为准；升级主题后重新核对下方差异。
 
@@ -82,6 +82,10 @@ pwd
 
 标签数量与代码块数量对应。不能把具有先后依赖的步骤藏进互斥标签页。正文说明关键参数和预期输出，代码内容保持可复制。
 
+Markdown 里的代码组优先单独成块。提示框和代码组都使用 `:::` 时，同层级的分隔符会干扰嵌套解析。确实需要把标签页放进提示框时，可以采用下方的 MDX `TabGroup`，并预览实际效果。
+
+同一个标签页需要同时展示说明、步骤和命令时，可以用 `:::: code-group` 包裹多个 `::: code-tab label="名称"`。一个 `sh npm2yarn` 围栏也可以从 npm 安装命令生成 npm、pnpm、Yarn 和 Bun 标签页。发布前逐个检查生成的命令。确实需要多个代码组联动时再配置 `sync` 和 `persist`。[代码组语法示例](code-groups.md)
+
 ### 图表：解释过程、关系与时序
 
 流程和架构优先 Mermaid，使用 `mermaid` 围栏：
@@ -97,9 +101,9 @@ flowchart LR
 ```
 ````
 
-也可按需使用 `sequenceDiagram`、`classDiagram`、`stateDiagram-v2`、`erDiagram`、`gantt`、`pie` 等。当前 `@mermanjs/web` 固定为 `0.8.0-alpha.3`，构建时输出明暗两套静态 SVG；复杂语法兼容性须实际验证。渲染失败可能降级为代码，因此构建成功之外还要检查日志和页面。
+也可按需使用 `sequenceDiagram`、`classDiagram`、`stateDiagram-v2`、`erDiagram`、`gantt`、`pie` 等。当前用 `@mermanjs/node` 0.11.0 在构建时生成明暗两套静态 SVG，再用 `@mermanjs/web` 校验。复杂语法需要实际预览。渲染失败可能降级为代码，因此构建后也要检查日志和页面。
 
-PlantUML 已启用，适合 UML 专题，用 `plantuml` 围栏包裹 `@startuml` 至 `@enduml`。当前使用官方公共服务器，图表展示依赖外部服务；不要将私密内容放进发送给公共服务器的图源。
+PlantUML 已启用，适合 UML 专题，用 `plantuml` 围栏包裹 `@startuml` 至 `@enduml`。当前使用官方公共服务器，图源只写可以公开的信息。两种图表都支持缩放和平移，正文仍应写出读者需要从图里看懂的关系或结论。
 
 ### 图片：截图说明与并排对照
 
@@ -154,7 +158,7 @@ PlantUML 已启用，适合 UML 专题，用 `plantuml` 围栏包裹 `@startuml`
 | 工具介绍 | GitHub 卡片、实际使用示例、功能对照表、相关文章卡片 |
 | 原理或架构解析 | Mermaid 流程/时序图、重点代码、必要公式 |
 | 界面改版或体验记录 | 带图注截图、前后图片网格、差异说明 |
-| 长篇或多篇连载 | 清晰的二三级标题、前置知识链接、文末关联文章卡片 |
+| 长篇或多篇连载 | 清晰的二三级标题、前置知识链接、系列导航、文末关联文章卡片 |
 
 文章标题由页面提供，正文通常从 `##` 开始。让前言清楚说明收益、适用对象和前置条件，方便摘要和读者快速判断；步骤后给出可观察的成功标准。
 
@@ -162,7 +166,9 @@ PlantUML 已启用，适合 UML 专题，用 `plantuml` 围栏包裹 `@startuml`
 
 Firefly 还提供分类/标签/归档、搜索、目录、阅读统计、评论、分享海报、RSS、主题与布局、侧边栏组件、音乐、友链、动态、相册、书签导航、打赏、追番/游戏列表和 Live2D/Spine 等配置。这些多数属于站点能力，不需要在每篇文章重复配置。
 
-当前源码默认开启友链、留言板、动态、书签导航、打赏；相册和 Bilibili/Bangumi/VNDB/MyAnimeList 页面默认关闭。`PUBLIC_PAGES_*` 环境变量可覆盖开关，因此上述是源码默认值，不代表已核实的线上状态。
+订阅入口包括 `/rss/`、`/rss.xml`、`/atom/` 和 `/atom.xml`，全文或摘要模式由 `siteConfig.feed.contentMode` 统一控制。站点还会生成 `/llms.txt` 文章索引。
+
+当前源码默认开启友链、留言板、动态、书签导航、Bilibili 追番和打赏。项目、相册、Bangumi、VNDB 和 MyAnimeList 默认关闭。部署环境可通过 `PUBLIC_PAGES_*` 覆盖开关。
 
 短消息可用 `src/content/dynamic/*.md`（`published`，可选 `pinned`、`location`）；完整教程仍放 posts。未经内容任务要求，不自动把文章拆成动态或修改站点功能。
 
@@ -171,7 +177,7 @@ Firefly 还提供分类/标签/归档、搜索、目录、阅读统计、评论�
 - 文章系列已支持：在 frontmatter 中设置完全一致的 `series` 名称与数字 `seriesOrder`，自动显示系列导航，也可访问 `/series/`。
 - 沉浸阅读已启用：桌面端文章页可进入专注阅读模式，默认不自动进入，目录位于左侧。
 - 项目集合已支持 `src/content/projects/*.{md,mdx}`；当前 `pages.projects: false`，尚未导入模板示例项目。准备好真实项目内容后再开启。
-- 在线封面叠加、回退图等配置比本地丰富；新增字段前先核对本地类型。
+- 本地封面类型声明支持 `enableInPostOverlay` 和 `showLoading` 可选字段。官方文档中的 `randomCoverImage.fallback` 未出现在本地类型中。
 - Python 风格提示框、随机封面虽然模板提供能力，但当前关闭。
 
 文章密码字段已支持，但只在用户需要时使用。它不隐藏标题、元数据或封面，也不保护仓库中的明文 Markdown 和密码；不应把密码文章当成向公开仓库提交秘密的方式。
@@ -184,15 +190,13 @@ Firefly 还提供分类/标签/归档、搜索、目录、阅读统计、评论�
 4. 涉及正文渲染或资源时按仓库要求运行 `pnpm check`、`pnpm type-check`、`pnpm build`；通过 dev/preview 检查图表、代码分组、图片、移动端和明暗主题。
 5. 本指南本身位于 docs，不进入文章集合；只更新写作说明时无需重新构建网站。
 
-
-## 6.16.8 新增写作能力
+## MDX 写作组件与现成示例
 
 MDX 可从 `@components/firefly-mdx` 导入 `Badge`、`Steps`、`StepItem`、`Timeline`、`TimelineItem`、`TabGroup`。以本地组件 props 为准；只有需要这些组件时才转为 `.mdx`。
 
-- `TabGroup`：分组展示多种内容，传 `labels` 数组，使用 `client:load` 启用交互。
-- `Steps` / `StepItem`：安装和操作步骤。
-- `Timeline` / `TimelineItem`：项目发展或经历时间线，可指定 `date`、`title`。
-- `Badge`：简短的状态或版本标识。
-- 系列文章：使用 `series: "系列名称"` 和 `seriesOrder: 1`，仍保留稳定 slug。
-- 订阅：新增 `/atom/`、`/atom.xml`；RSS 和 Atom 正文策略由 `siteConfig.feed.contentMode` 控制。
-- `/llms.txt` 自动提供站点文章索引。
+- `TabGroup` 适合切换平台或查看等价实现。传入 `labels` 数组，每个标签对应一个内容块，使用 `client:load` 启用切换。
+- `Steps` 和 `StepItem` 适合依次完成的安装和操作步骤。`StepItem` 可写 `title`，编号由组件生成。仓库里已有步骤条和代码块搭配的示例。[MacBook Duo Fold](../src/content/posts/macbook-duo-fold.mdx)
+- `Timeline` 和 `TimelineItem` 适合有明确时间节点的经历或项目进展，可为每个条目填写 `date` 和 `title`。
+- `Badge` 适合简短的状态或版本标识，例如 `<Badge>实验功能</Badge>`。
+
+纯 Markdown 的分平台命令可以参考现有文章里的 Windows PowerShell 和 macOS / Linux 代码组。[QQ 聊天机器人教程](../src/content/posts/QQbot.md)

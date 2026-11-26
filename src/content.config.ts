@@ -60,7 +60,13 @@ type ContentCollection<T> = CollectionConfig<
 >;
 
 const postsCollection: ContentCollection<PostData> = defineCollection({
-	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/posts" }),
+	loader: glob({
+		pattern: "**/*.{md,mdx}",
+		base:
+			process.env.FIREFLY_TEST_CODE_GROUPS === "1"
+				? "./tests/fixtures"
+				: "./src/content/posts",
+	}),
 	schema: z.object({
 		title: z.string(),
 		published: z.date(),

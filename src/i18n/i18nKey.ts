@@ -92,6 +92,8 @@ enum I18nKey {
 	musicCover = "musicCover",
 	musicNoCover = "musicNoCover",
 	musicAudioPlayer = "musicAudioPlayer",
+	musicFloatingLyrics = "musicFloatingLyrics",
+	musicCloseFloatingLyrics = "musicCloseFloatingLyrics",
 
 	themeColor = "themeColor",
 
@@ -496,6 +498,7 @@ enum I18nKey {
 	galleryAlbums = "galleryAlbums",
 	galleryNoAlbums = "galleryNoAlbums",
 	galleryBackToAlbums = "galleryBackToAlbums",
+	galleryEnterAlbum = "galleryEnterAlbum",
 	searchAlbums = "searchAlbums",
 
 	// 密码保护

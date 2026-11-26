@@ -69,6 +69,8 @@ export const ja: Translation = {
 	[Key.musicCover]: "カバー",
 	[Key.musicNoCover]: "カバーなし",
 	[Key.musicAudioPlayer]: "オーディオプレーヤー",
+	[Key.musicFloatingLyrics]: "フローティング歌詞",
+	[Key.musicCloseFloatingLyrics]: "フローティング歌詞を閉じる",
 
 	// お知らせ
 	[Key.announcement]: "お知らせ",
@@ -192,7 +194,7 @@ export const ja: Translation = {
 	[Key.bangumiCategoryReal]: "実写",
 
 	// バングミデータ更新
-	[Key.bangumiLastUpdated]: "データ更新",
+	[Key.bangumiLastUpdated]: "データ更新日",
 	[Key.bangumiUpdatedAt]: "ビルド時間",
 	[Key.bangumiDataStatic]: "静的データ",
 
@@ -220,7 +222,7 @@ export const ja: Translation = {
 	[Key.vndbNotConfigured]: "VNDB ユーザーIDが未設定です",
 	[Key.vndbNotConfiguredDesc]:
 		"src/config/siteConfig.ts で VNDB ユーザーIDを設定してください",
-	[Key.vndbLastUpdated]: "データ更新",
+	[Key.vndbLastUpdated]: "データ更新日",
 	[Key.vndbVotes]: "票",
 	[Key.vndbLengthVeryShort]: "非常に短い",
 	[Key.vndbLengthShort]: "短い",
@@ -247,7 +249,7 @@ export const ja: Translation = {
 	[Key.animeDateDesc]: "新しい順",
 	[Key.animeDateAsc]: "古い順",
 	[Key.animeNoResults]: "一致するアニメが見つかりません",
-	[Key.animeLastUpdated]: "データ更新",
+	[Key.animeLastUpdated]: "データ更新日",
 	[Key.animeEpStatus]: "進捗",
 	[Key.animeViewDetails]: "詳細を見る",
 	[Key.animeBilibiliAvg]: "Bilibili 平均",
@@ -289,7 +291,7 @@ export const ja: Translation = {
 	[Key.malNotConfigured]: "MyAnimeList が未設定です",
 	[Key.malNotConfiguredDesc]:
 		"src/config/siteConfig.ts で MyAnimeList のユーザー名と Client ID を設定してください（リストは公開にする必要があります）",
-	[Key.malLastUpdated]: "データ更新",
+	[Key.malLastUpdated]: "データ更新日",
 	[Key.malSeasonWinter]: "冬",
 	[Key.malSeasonSpring]: "春",
 	[Key.malSeasonSummer]: "夏",
@@ -510,6 +512,7 @@ export const ja: Translation = {
 	[Key.galleryAlbums]: "冊のアルバム",
 	[Key.galleryNoAlbums]: "アルバムがありません",
 	[Key.galleryBackToAlbums]: "アルバム一覧に戻る",
+	[Key.galleryEnterAlbum]: "アルバムを見る",
 	[Key.searchAlbums]: "アルバムを検索...",
 
 	// パスワード保護
